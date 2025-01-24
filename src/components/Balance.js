@@ -13,7 +13,7 @@ export default function Balance({ balance }) {
 					background-color: white;
 					padding: 0.5rem;
 					position: fixed;
-					top: 3rem;
+					top: 5rem;
 					right: 3rem;
 					color: ${balance > 0 ? "#15803d" : "#dc2626"};
 				}
