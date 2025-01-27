@@ -15,6 +15,9 @@ export default function Navbar() {
 				<Link href={"/flex-card"} className="hover:underline">
 					Flex
 				</Link>
+				<Link href={"/http"} className="hover:underline">
+					HTTP
+				</Link>
 			</div>
 		</div>
 	);
