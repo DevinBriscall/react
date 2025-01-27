@@ -65,6 +65,17 @@ export default function Home() {
 					</p>
 				</Link>
 
+				{/* CSS Basics */}
+				<Link
+					href="/css"
+					className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">
+						CSS Basics
+					</h2>
+					<p className="text-gray-600">Get started with CSS.</p>
+				</Link>
+
 				{/* React Basics */}
 				<Link
 					href="/react-basics"
