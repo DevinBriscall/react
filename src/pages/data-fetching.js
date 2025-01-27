@@ -45,8 +45,8 @@ export default function ClientVsServer({ serverSideData }) {
 						<td className="border border-gray-300 p-4 align-top">
 							<p>
 								<em>
-									Notice how the data takes a moment to load after the page
-									refreshes.
+									<strong>(refresh the page rapidly)</strong> Notice how the
+									data takes a moment to load after the page refreshes.
 								</em>
 								This happens because the data is fetched in the browser after
 								the page renders.

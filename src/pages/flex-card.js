@@ -7,8 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Card from "@/components/Card";
 
-const placeholderDescription =
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 const steps = [
 	{
 		title: "Identify Your End Goal",
@@ -28,7 +26,7 @@ const steps = [
 		description:
 			"Define the main wrapper of the card using a `div` with the class `card`.\n\n" +
 			'<div className="card">\n' +
-			"  <!-- Content will go here -->\n" +
+			" Content will go here \n" +
 			"</div>\n" +
 			"\n" +
 			"Add basic styling to the card container, such as a box shadow, to give it a card-like appearance.\n\n" +
@@ -58,7 +56,7 @@ const steps = [
 		description:
 			"Add a `div` with the class `card-content` to hold all the content below the image.\n\n" +
 			'<div className="card-content">\n' +
-			"  <!-- Content will go here -->\n" +
+			" Content will go here \n" +
 			"</div>\n" +
 			"\n" +
 			"Use Flexbox to arrange the content in a column layout:\n\n" +
@@ -78,7 +76,7 @@ const steps = [
 			'<div className="top-row">\n' +
 			'  <p className="username">posted by: <span className="bold">cool_username_cool_username</span></p>\n' +
 			'  <div className="likes">\n' +
-			"    <!-- Like icons will go here -->\n" +
+			"   Like icons will go here \n" +
 			"  </div>\n" +
 			"</div>\n" +
 			"\n" +
@@ -123,7 +121,7 @@ const steps = [
 			'  <div className="tag">\n' +
 			'    <p className="tag-text">tag</p>\n' +
 			"  </div>\n" +
-			"  <!-- Repeat for other tags -->\n" +
+			" Repeat for other tags \n" +
 			"</div>\n" +
 			"\n" +
 			"Use Flexbox to arrange the tags in a row and allow them to wrap to the next line if needed:\n\n" +
