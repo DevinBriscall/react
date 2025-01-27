@@ -48,7 +48,20 @@ export default function Home() {
 				>
 					<h2 className="text-xl font-semibold text-blue-600 mb-3">HTTP</h2>
 					<p className="text-gray-600">
-						Dive into the fundamentals of HTTP requests.
+						Dive into the fundamentals of HTTP requests and error codes.
+					</p>
+				</Link>
+
+				{/* JavaScript Basics */}
+				<Link
+					href="/javascript"
+					className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">
+						JavaScript Basics
+					</h2>
+					<p className="text-gray-600">
+						Get started with JavaScript, the programming language of the Web
 					</p>
 				</Link>
 
