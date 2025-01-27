@@ -15,6 +15,25 @@ export default function Home() {
 
 			{/* Card Container */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+				{/* Civiconnect Checklist */}
+				<div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200">
+					<Link href="/civiconnect-checklist" className="cursor-pointer">
+						<h2 className="text-xl font-semibold text-blue-600 mb-3">
+							Civiconnect Concepts Checklist
+						</h2>
+						<p className="text-gray-600">
+							A quick reference for each topic listed here:
+						</p>
+					</Link>
+					<a
+						href="/concepts-checklist-v2.pdf"
+						download="Civiconnect_Checklist.pdf"
+						className="mt-4 inline-block text-blue-500 hover:text-blue-700 underline"
+					>
+						Download Checklist PDF
+					</a>
+				</div>
+
 				{/* Flex Card */}
 				<Link
 					href="/flex-card"
