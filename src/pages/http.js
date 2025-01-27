@@ -5,9 +5,9 @@ export default function HTTPMethods() {
 
 	return (
 		<div className="container">
-			{/* Tabs for each HTTP method */}
+			{/* Tabs for each HTTP method and error codes */}
 			<div className="tabs">
-				{["GET", "POST", "PUT", "PATCH", "DELETE"].map((tab) => (
+				{["GET", "POST", "PUT", "PATCH", "DELETE", "Error Codes"].map((tab) => (
 					<button
 						key={tab}
 						onClick={() => setActiveTab(tab)}
@@ -163,6 +163,53 @@ export default function HTTPMethods() {
 						</div>
 					</div>
 				)}
+
+				{/* Error Codes Tab */}
+				{activeTab === "Error Codes" && (
+					<div className="explanation-box">
+						<h3>HTTP Error Codes</h3>
+						<p>
+							HTTP error codes indicate issues with a request. Below are some
+							common error codes and their meanings:
+						</p>
+						<ul className="error-codes-list">
+							<li>
+								<strong>400 - Bad Request:</strong> The server cannot process
+								the request due to client-side errors (e.g., invalid syntax).
+							</li>
+							<li>
+								<strong>401 - Unauthorized:</strong> Authentication is required
+								or has failed.
+							</li>
+							<li>
+								<strong>403 - Forbidden:</strong> The client does not have
+								permission to access the resource.
+							</li>
+							<li>
+								<strong>404 - Not Found:</strong> The requested resource could
+								not be found on the server.
+							</li>
+							<li>
+								<strong>500 - Internal Server Error:</strong> A generic error
+								message indicating a server-side issue.
+							</li>
+							<li>
+								<strong>502 - Bad Gateway:</strong> The server received an
+								invalid response from an upstream server.
+							</li>
+							<li>
+								<strong>503 - Service Unavailable:</strong> The server is
+								temporarily unable to handle the request.
+							</li>
+						</ul>
+						<div className="visual-cue">
+							<p>
+								Always check the error code to diagnose and resolve issues with
+								your requests.
+							</p>
+						</div>
+					</div>
+				)}
 			</div>
 
 			{/* Styling */}
@@ -234,6 +281,17 @@ export default function HTTPMethods() {
 					overflow-x: auto;
 					font-family: "Courier New", Courier, monospace;
 					margin: 1rem 0;
+				}
+
+				.error-codes-list {
+					list-style-type: disc;
+					padding-left: 1.5rem;
+					margin: 1rem 0;
+				}
+
+				.error-codes-list li {
+					margin-bottom: 0.5rem;
+					line-height: 1.5;
 				}
 			`}</style>
 		</div>
