@@ -194,7 +194,7 @@ export default function Basics() {
 					</div>
 				)}
 
-				{activeTab === "Component" && (
+				{activeTab === "Components" && (
 					<div className="explanation-box">
 						<h3>Component</h3>
 						<p>
