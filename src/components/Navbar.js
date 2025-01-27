@@ -18,6 +18,9 @@ export default function Navbar() {
 				<Link href={"/http"} className="hover:underline">
 					HTTP
 				</Link>
+				<Link href={"/strapi"} className="hover:underline">
+					strapi
+				</Link>
 			</div>
 		</div>
 	);
