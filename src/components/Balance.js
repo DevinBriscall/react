@@ -12,9 +12,6 @@ export default function Balance({ balance }) {
 					font-weight: bold;
 					background-color: white;
 					padding: 0.5rem;
-					position: fixed;
-					top: 5rem;
-					right: 3rem;
 					color: ${balance > 0 ? "#15803d" : "#dc2626"};
 				}
 				.positive {

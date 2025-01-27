@@ -177,6 +177,7 @@ export default function Basics() {
 )}
 {value >= 10 && <p>Okay, please stop! That tickles! 😄</p>}`}
 						</pre>
+
 						<div className="message">
 							{value === 0 ? (
 								<p>
@@ -191,6 +192,9 @@ export default function Basics() {
 								</p>
 							)}
 						</div>
+						<button className="button" onClick={() => setValue(0)}>
+							Reset Value
+						</button>
 					</div>
 				)}
 
@@ -208,7 +212,7 @@ export default function Basics() {
 <Balance balance={value} />`}
 						</pre>
 						<div className="balance-container">
-							<h3>Balance Component:</h3>
+							<span>Balance Component:</span>
 							<Balance balance={value} />
 						</div>
 					</div>
