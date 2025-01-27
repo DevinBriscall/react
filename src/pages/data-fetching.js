@@ -50,7 +50,7 @@ export default function ClientVsServer({ dataFromStrapi }) {
 					<tbody>
 						{/* Row 1: Data Loading Visualization */}
 						<tr>
-							<td className="border border-gray-300 p-4 align-top">
+							<td className="border border-gray-300 p-4 align-top w-1/2">
 								<p>
 									<em>
 										<strong>(Refresh the page rapidly)</strong> Notice how the
