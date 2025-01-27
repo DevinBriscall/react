@@ -12,6 +12,9 @@ export default function Navbar() {
 				<Link href={"/data-fetching"} className="hover:underline">
 					Data Fetching
 				</Link>
+				<Link href={"/flex-card"} className="hover:underline">
+					Flex
+				</Link>
 			</div>
 		</div>
 	);
