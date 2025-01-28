@@ -6,12 +6,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 
 export default function App({ Component, pageProps }) {
-	const [showBanner, setShowBanner] = useState(true);
+	const [showBanner, setShowBanner] = useState(false);
+	const ERRORMESSAGE = "";
 	return (
 		<>
 			{showBanner && (
 				<div className="bg-red-500 p-4 flex justify-between items-center">
-					<span>I am working on a darkmode fix.</span>
+					<span>{ERRORMESSAGE}</span>
 					<FontAwesomeIcon
 						icon={faClose}
 						onClick={() => setShowBanner(false)}
