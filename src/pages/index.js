@@ -1,3 +1,6 @@
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -140,6 +143,50 @@ export default function Home() {
 						Build modern websites without ever leaving your HTML
 					</p>
 				</Link>
+
+				{/* Grid Garden */}
+				<a
+					href="https://cssgridgarden.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="bg-white relative rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 flex flex-col items-center"
+				>
+					<FontAwesomeIcon
+						icon={faArrowUpRightFromSquare}
+						className="w-4 h-4 absolute right-4 text-gray-300"
+					/>
+					<div className="w-20 relative h-20 bg-gray-200 mb-4">
+						<Image src="/images/garden.jpg" fill objectFit="cover" />
+					</div>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">
+						Grid Garden
+					</h2>
+					<p className="text-gray-600 text-center">
+						Practice CSS Grid by watering carrots!
+					</p>
+				</a>
+
+				{/* Flexbox Froggy */}
+				<a
+					href="https://flexboxfroggy.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="bg-white relative rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 flex flex-col items-center"
+				>
+					<FontAwesomeIcon
+						icon={faArrowUpRightFromSquare}
+						className="w-4 h-4 absolute right-4 text-gray-300"
+					/>
+					<div className="w-20 relative h-20 bg-gray-200 mb-4">
+						<Image src="/images/froggy.jpg" fill objectFit="cover" />
+					</div>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">
+						Flexbox Froggy
+					</h2>
+					<p className="text-gray-600 text-center">
+						Learn CSS Flexbox by helping frogs find their lily pads!
+					</p>
+				</a>
 			</div>
 		</div>
 	);
