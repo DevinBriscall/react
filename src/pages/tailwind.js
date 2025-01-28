@@ -12,6 +12,7 @@ export default function TailwindFundamentals() {
 					"Utility-First",
 					"Responsive Design",
 					"Customization",
+					"Docs & Autocomplete", // New tab
 				].map((tab) => (
 					<button
 						key={tab}
@@ -132,6 +133,61 @@ module.exports = {
 							<p>
 								Extend Tailwind&apos;s default configuration to match your
 								design system.
+							</p>
+						</div>
+					</div>
+				)}
+
+				{/* New Tab: Docs & Autocomplete */}
+				{activeTab === "Docs & Autocomplete" && (
+					<div className="bg-white p-6 rounded-lg shadow-md">
+						<h3 className="text-2xl font-bold mb-4">
+							Using Tailwind Docs & Autocomplete
+						</h3>
+						<p className="mb-4">
+							Tailwind CSS provides excellent documentation and autocomplete
+							support in modern code editors. Here&apos;s how to make the most
+							of these tools:
+						</p>
+						<ul className="list-disc pl-6 mb-4">
+							<li className="mb-2">
+								<strong>Tailwind Docs:</strong> The official{" "}
+								<a
+									href="https://tailwindcss.com/docs"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-blue-600 hover:underline"
+								>
+									Tailwind CSS documentation
+								</a>{" "}
+								is comprehensive and searchable. Use it to quickly find utility
+								classes and their usage.
+							</li>
+							<li className="mb-2">
+								<strong>Editor Autocomplete:</strong> If you&apos;re using VS
+								Code, install the{" "}
+								<a
+									href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-blue-600 hover:underline"
+								>
+									Tailwind CSS IntelliSense extension
+								</a>
+								. It provides autocomplete suggestions for Tailwind classes as
+								you type.
+							</li>
+							<li className="mb-2">
+								<strong>Search for Classes:</strong> If you&apos;re unsure which
+								class to use, type a keyword (e.g., &quot;flex&quot;) in the
+								docs search bar or your editor&apos;s autocomplete to see
+								relevant options.
+							</li>
+						</ul>
+						<div className="bg-blue-50 p-4 rounded-md mt-4 text-center">
+							<p>
+								Leverage the docs and autocomplete to speed up your development
+								workflow!
 							</p>
 						</div>
 					</div>

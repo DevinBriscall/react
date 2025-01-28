@@ -173,7 +173,7 @@ export default function FlexCard() {
 						<div></div>
 					)}
 				</div>
-				<div className="grid rounded border grid-cols-2">
+				<div className="grid grid-cols-1 rounded border md:grid-cols-2">
 					{/* code */}
 					<div className="border-e p-4">
 						<pre className="bg-gray-100 p-4 rounded-lg whitespace-pre-wrap">
@@ -181,7 +181,7 @@ export default function FlexCard() {
 						</pre>
 					</div>
 					{/* the card */}
-					<div className={`p-4 ${step === 1 && "grid grid-cols-2 gap-2"}`}>
+					<div className={`p-4 ${step === 1 && "grid md:grid-cols-2 gap-2"}`}>
 						<Card step={step} />
 					</div>
 				</div>
