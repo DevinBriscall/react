@@ -129,6 +129,17 @@ export default function Home() {
 						your content.
 					</p>
 				</Link>
+
+				{/* Tailwind */}
+				<Link
+					href="/tailwind"
+					className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">Tailwind</h2>
+					<p className="text-gray-600">
+						Build modern websites without ever leaving your HTML
+					</p>
+				</Link>
 			</div>
 		</div>
 	);
