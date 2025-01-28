@@ -455,8 +455,7 @@ const listItems = numbers.map((number) =>
 								</pre>
 							</li>
 							<li>
-								<strong>Forms in React</strong>: Use controlled inputs for form
-								handling.
+								<strong>Forms in React</strong>: Use onSubmit for form handling.
 								<pre>
 									{`import React from 'react';
 
