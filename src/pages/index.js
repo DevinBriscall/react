@@ -109,6 +109,15 @@ export default function Home() {
 					</p>
 				</Link>
 
+				{/* git */}
+				<Link
+					href="/git"
+					className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">Git</h2>
+					<p className="text-gray-600">An intro to version control.</p>
+				</Link>
+
 				{/* Strapi */}
 				<Link
 					href="/strapi"
