@@ -10,7 +10,7 @@ import React from "react";
 export default function Navbar() {
 	return (
 		<div className="border-b sticky top-0 z-50 bg-white font-bold h-[60px] px-4 flex justify-between items-center">
-			<Link href={"/"}>React Examples</Link>
+			<Link href={"/"}>Developer Hub</Link>
 			<div className="flex items-center gap-2 transition-all duration-300">
 				<span>Devin Briscall:</span>
 				<a
