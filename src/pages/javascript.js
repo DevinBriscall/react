@@ -60,11 +60,6 @@ function greet(name) {
 // Arrow Function
 const greet = (name) => "Hello, " + name;`}
 						</pre>
-						<div className="visual-cue">
-							<p>
-								Try calling the <code>greet</code> function with your name!
-							</p>
-						</div>
 					</div>
 				)}
 

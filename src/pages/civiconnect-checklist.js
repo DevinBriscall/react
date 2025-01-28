@@ -458,19 +458,36 @@ const listItems = numbers.map((number) =>
 								<strong>Forms in React</strong>: Use controlled inputs for form
 								handling.
 								<pre>
-									{`function Form() {
-  const [name, setName] = useState("");
+									{`import React from 'react';
+
+function Form() {
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Access form data directly from the event target
+    const formData = new FormData(event.target);
+    const name = formData.get('name');
+
+    // Do something with the form data, e.g., send it to an API
+    console.log('Submitted name:', name);
+
+    // Optionally, you can reset the form after submission
+    event.target.reset();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        name="name" // Add a name attribute to access the value in FormData
+        defaultValue="" // Use defaultValue instead of value to make the input uncontrolled
       />
       <button type="submit">Submit</button>
     </form>
   );
-}`}
+}
+
+export default Form;`}
 								</pre>
 							</li>
 							<li>
