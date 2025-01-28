@@ -144,6 +144,19 @@ export default function Home() {
 					</p>
 				</Link>
 
+				{/* Debugging */}
+				<Link
+					href="/debugging"
+					className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-200 cursor-pointer"
+				>
+					<h2 className="text-xl font-semibold text-blue-600 mb-3">
+						Debugging
+					</h2>
+					<p className="text-gray-600">
+						A short reference for debugging techniques.
+					</p>
+				</Link>
+
 				{/* Grid Garden */}
 				<a
 					href="https://cssgridgarden.com/"
